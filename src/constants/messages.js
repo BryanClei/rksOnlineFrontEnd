@@ -16,3 +16,21 @@ export const SNACKBAR_COLOR = {
   error: "error",
   info: "primary",
 };
+export const DISPLAY_TEXT = {
+  shop: "RK's Online",
+  haveAccount: "Does have an account?",
+  dontHaveAccount: "Don't have an account?",
+  login: "Login",
+  register: "Register",
+  back: "Back",
+};
+export const NAVBAR_TEXT = {
+  pages: [
+    { name: "Products", href: "/products" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+    { name: "Login", href: "/login" },
+  ],
+};
+export const USER_SETTINGS = ["Profile", "Account", "Dashboard", "Logout"];
+export const SHOP_IMAGE = { url: "/logo.png" };

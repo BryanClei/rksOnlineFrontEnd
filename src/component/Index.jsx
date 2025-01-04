@@ -1,11 +1,12 @@
+import React from "react";
 import { FirstPage, KeyboardBackspaceOutlined } from "@mui/icons-material";
 import { Box, Button, Link, Typography } from "@mui/material";
-
-import React from "react";
+import ResponsiveNavbar from "./navbar/ResponsiveNavbar";
 
 const Index = () => {
   return (
     <Box>
+      <ResponsiveNavbar />
       <Typography>Index</Typography>
       <Button
         href="/login"

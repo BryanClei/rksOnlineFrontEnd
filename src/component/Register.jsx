@@ -1,4 +1,5 @@
 import { Box, Link, TextField, Typography } from "@mui/material";
+import { DISPLAY_TEXT } from "../constants/messages";
 import React from "react";
 import "../styles/register.css";
 
@@ -46,7 +47,11 @@ function Register() {
           size="small"
         />
       </Box>
-      <Link href="/"> Back </Link>
+      <Typography>
+        {DISPLAY_TEXT.haveAccount}{" "}
+        <Link href="/login">{DISPLAY_TEXT.login}</Link>
+      </Typography>
+      <Link href="/"> {DISPLAY_TEXT.home} </Link>
     </Box>
   );
 }
