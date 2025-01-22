@@ -26,6 +26,7 @@ export const DISPLAY_TEXT = {
 };
 export const NAVBAR_TEXT = {
   pages: [
+    { name: "Home", href: "/"},
     { name: "Products", href: "/products" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
@@ -33,4 +34,4 @@ export const NAVBAR_TEXT = {
   ],
 };
 export const USER_SETTINGS = ["Profile", "Account", "Dashboard", "Logout"];
-export const SHOP_IMAGE = { url: "/logo.png" };
+export const SHOP_IMAGE = { url: "/logo.png", section: "/section.png" };

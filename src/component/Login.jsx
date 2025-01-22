@@ -41,7 +41,7 @@ const Login = () => {
 
   return (
     <Box className="container">
-      <Box className="Login-containerBox">
+      <Box className="Login-containerBox" sx={{ boxShadow: 3 }}>
         <Typography variant="h5">Rk's Online</Typography>
         <Typography align="center" variant="h5">
           Login

@@ -6,25 +6,19 @@ import HeroSection from "./hero/hero_section";
 
 const Index = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <ResponsiveNavbar />
       <Toolbar />
-      <Box
-        sx={{
-          marginTop: { xs: "-112px", md: "-112px", maxWidth: "100%" }, // Adjust for navbar height
-        }}
-      >
-        <HeroSection />
+      <Box sx={{ flex: 1 }}>
+        <HeroSection sx={{ width: "100%" }} />
       </Box>
-      <Typography>Index</Typography>
-      <Button
-        href="/login"
-        startIcon={<KeyboardBackspaceOutlined sx={{ pb: 0.3 }} />}
-        variant="contained"
-        size="small"
-      >
-        Login
-      </Button>
     </Box>
   );
 };

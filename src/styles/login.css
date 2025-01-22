@@ -1,14 +1,28 @@
-.container{
-    align-items: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .Login-containerBox{
+    align-items: center;
     display: flex;
     gap: 10px;
     flex-direction: column;
-    width: 80%;
-    padding: 50px;
-    background-color: rgb(241, 245, 243);
+    background-color: rgb(219, 235, 228);
     border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .MuiButton-root.LoginBtn {
     text-transform: capitalize;

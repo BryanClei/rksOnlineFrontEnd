@@ -33,22 +33,18 @@ function ResponsiveNavbar() {
   } = useResponsiveNavbar();
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: "#F1840B" }}>
-      <Container maxWidth="sm">
-        <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-          <Box
-            component="img"
-            src={SHOP_IMAGE.url}
-            alt="Logo"
-            sx={{
-              width: "100%",
-              maxWidth: 60,
-              height: "auto",
-              borderRadius: 2,
-              boxShadow: 1,
-            }}
-          ></Box>
+    <AppBar
+      position="fixed"
+      sx={{ background: "linear-gradient(to left, #FF844b, #FF503b)" }}
+    >
+      <Container maxWidth="lg">
+        <Toolbar
+          disableGutters
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Typography
             variant="h6"
             noWrap
@@ -100,6 +96,8 @@ function ResponsiveNavbar() {
                   maxWidth: 60,
                   height: "auto",
                   padding: 2,
+                  borderRadius: "30%",
+                  overflow: "hidden",
                 }}
               ></Box>
               {NAVBAR_TEXT.pages.map((page) => (
@@ -108,7 +106,6 @@ function ResponsiveNavbar() {
                     component="a"
                     href={page.href}
                     sx={{ textDecoration: "none", color: "inherit" }}
-                    textAlign="center"
                   >
                     {page.name}
                   </Typography>
@@ -116,11 +113,38 @@ function ResponsiveNavbar() {
               ))}
             </Drawer>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              gap: 5,
+              alignItems: "center",
+            }}
+          >
+            {/* <Box
+              component="img"
+              src={SHOP_IMAGE.url}
+              alt="Logo"
+              sx={{
+                width: "100%",
+                maxWidth: 70,
+                height: "auto",
+                borderRadius: 2,
+                boxShadow: 1,
+              }}
+            ></Box> */}
             {NAVBAR_TEXT.pages.map((page) => (
               <Button
+                variant="outlined"
                 key={page.name}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "#ffff",
+                  display: "block",
+                  borderRadius: "20px",
+                  borderColor: "white"
+                }}
                 href={page.href}
               >
                 {page.name}
